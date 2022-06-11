@@ -1,0 +1,39 @@
+# Conclusion
+
+After an in-depth analysis of the response data on face recognition ability analysis among college students of India, this section will mark the end of this study. I will conclude the study by presenting a summary of findings and explanations. I would also provide necessary and important suggestions. One limitation that posed difficulty in analyzing the data was it's small sample size. Further research and study on this face recognition ability analysis of students, in context of India is very important and is welcomed.
+
+## Summary
+
+We found several key fact and results from our analysis about the college students of India on constituting their face recognition ability. These findings are summarized as follows:
+
+-   **Overall average face recognition score on our questionnaire is around around 60% with 95% confidence**. The **students shows only a slightly higher face recognition ability**. Even the **distribution of face recognition score is skewed not mch high peaking around average score**.
+
+-   The **facial memory, social understanding and importance of face, attention and perception to the face and facial features are highly inter related**.
+
+-   **Students don't pay much attention to the beautifying standards set by the society on good looks, fair skin, etc**.
+
+-   **Students agree slightly on the fact that good looking person get better opportunity**.
+
+-   **Students even though remember faces, find it difficult to remember the identity of the person**.
+
+-   **Students observe the face as an overall entity and doesn't focus on specific parts of a person's face**.
+
+-   **Students find face as an important mode of communication**.
+
+-   **Students tend to attend faster to known faces and familiarity with face plays an important role to students compared to unknown faces and unfamiliarity**.
+
+This analysis sheds light on the several psychological aspects of human faces and how they are percieved, retained and understood by students.
+
+# Bibliography
+
+I didn't to much resources for the analysis section of this study. So, the work is mostly original. Some resources that helped me get started on this project and provide background information on the variables are as follows-
+
+-   Questionnaire form has been made by [Dr. Debdulal Dutta Roy](https://www.isical.ac.in/~ddroy/), [Psychology Research Unit](https://pru.isical.ac.in/content/psychology-research-unit-0), [Indian Statistical Institute](https://www.isical.ac.in/).
+
+- [Pro-Environmental Attitude Analysis among college students of India](https://github.com/RishiDarkDevil/Pro-Environmental-Attitude-Analysis) by Rishi Dey Chowdhury(Me).
+
+# Tools & Code
+
+The entire analysis was done in R, with the help of the freely available IDE, RStudio. This Report was written using RMarkdown.
+
+The relevant code and the data used for this study and all necessary information are available at the GitHub Repository for this study [Face-Recognition-Psychology](https://github.com/RishiDarkDevil/Face-Recognition-Psychology).
