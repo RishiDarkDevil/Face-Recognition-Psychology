@@ -106,109 +106,61 @@ To conduct the face recognition study, we circulated a survey form among college
 
 Here we will see the actual questions asked in the Survey Questionnaire Form. Each of these items club together to form the study variables, which further club together to form the overall pro-environmental attitude.
 
--   **REC**
+-   **MEM**
 
-    -   **REC1**: I think recycling of products is important.
+    -   **MEM1**: I can easily remember unfamiliar faces.
 
-    -   **REC2**: I upcycle old products into new and useful items.
+    -   **MEM2**: I can easily recall familiar faces.
 
-    -   **REC3**: I believe recycling reduces the consumption of new raw materials.
+    -   **MEM3**: I find it easy to recognize my childhood friends.
 
-    -   **REC4**: I like to learn more about product recycling.
+    -   **MEM4**: I find it easy to identify people based on their facial features.
 
-    -   **REC5**: I believe recycling is truly beneficial for the environment.
+    -   **MEM5**: Overall I possess a good face-recognition ability.
 
-    -   **REC6**: I believe recycling reduces waste production.
+    -   **MEM6**: I find it easier to recognize familiar faces but am often unable to trace their identity.
 
-    -   **REC7**: I believe recycling promotes sustainable living.
+-   **ATTNPER**
 
--   **SA**
+    -   **ATTNPER1**: I pay more attention to the human face as a whole in general.
 
-    -   **SA1**: Safe disposal of waste products is costly.
+    -   **ATTNPER2**: I tend to pay more attention to external features of the face.
 
-    -   **SA2**: I believe there should be a fine imposed on people who don't follow proper protocols.
+    -   **ATTNPER3**: The face is a n important tool for information processing.
 
-    -   **SA3**: Strict policies should be put into place to conserve the environment.
+    -   **ATTNPER4**: I tend to focus more on the lower part of the face.
 
-    -   **SA4**: I believe proper precaution should be taken when dealing with toxic chemicals.
+    -   **ATTNPER5**: I tend to attend faster to familiar faces than unfamiliar faces.
 
-    -   **SA5**: Precautionary measures should be undertaken in a firm manner with regard to natural disasters.
+-   **SOC**
 
-    -   **SA6**: I feel policies should be put in place to increase environmental safety.
+    -   **SOC1**: I consider the human face as an important tool for daily communication.
 
--   **PC**
+    -   **SOC2**: I am easily attracted to beautiful and fair-skinned faces.
 
-    -   **PC1**: I feel I am adept at managing waste around my surroundings.
+    -   **SOC3**: I am more keen to get involved with a person who is good-looking.
 
-    -   **PC2**: I often feel as though one single person cannot change the environment.
+    -   **SOC4**: I feel that attractive people are able to get better opportunities.
 
-    -   **PC3**: I believe my actions are responsible for climate change.
+    -   **SOC5**: I consider myself lucky that I have attractive facial features.
 
-    -   **PC4**: I think environmental conservation is everyone's responsibility.
+    -   **SOC6**: I get easily carried away by good-looks.
 
-    -   **PC5**: I believe our cumulative efforts can reduce global warming.
+-   **FAC**
 
-    -   **PC6**: I believe that I can control environmental pollution.
+    -   **FAC1**: I am more drawn towards the eyes of a person.
 
--   **SS**
+    -   **FAC2**: I dislike people with too much facial hair.
 
-    -   **SS1**: I believe that an individual alone cannot help in conserving the environment without social support.
+    -   **FAC3**: I like to keep my face clean and glowing.
 
-    -   **SS2**: I prefer participating in mass clean-up drives to reduce pollution.
+    -   **FAC4**: I am easily attracted towards toned cheek-bones.
 
-    -   **SS3**: Creating nature clubs can help generate awareness about environmental issues.
+    -   **FAC5**: I prefer make up on my face/partner's face.
 
-    -   **SS4**: I like volunteering my services for habitat management work.
+    -   **FAC6**: I like people with sharp facial features, e.g.: sharp nose.
 
-    -   **SS5**: I believe in social support for environment protection through the local clubs and NGOs.
-
--   **ER**
-
-    -   **ER1**: I believe closing the taps when we brush can help save water.
-
-    -   **ER2**: I feel the Earth has plenty of natural resources if we just learn how to effectively use them.
-
-    -   **ER3**: I firmly support closing the lights and fans in a room before leaving it.
-
-    -   **ER4**: I feel all products (like shampoo and soap) should be used till the very end.
-
-    -   **ER5**: I feel everyone should switch to eco-friendly methods more frequently.
-
--   **ES**
-
-    -   **ES1**: I like working in well-illuminated, airy places.
-
-    -   **ES2**: Disordered surroundings make me anxious.
-
-    -   **ES3**: Crowded places make me feel uneasy.
-
-    -   **ES4**: Very loud noise or music makes me uncomfortable.
-
-    -   **ES5**: I feel irritated when I see garbage thrown on the road and the roadside.
-
--   **RES**
-
-    -   **RES1**: I find new ways to use waste products.
-
-    -   **RES2**: Items should be repaired before deciding to throw them away.
-
-    -   **RES3**: I like buying products that can be used again, rather than disposable items.
-
-    -   **RES4**: Reuse preserves natural resources.
-
-    -   **RES5**: I look for new ways to reuse old products.
-
--   **CON**
-
-    -   **CON1**: Regular awareness programs can help conserve the natural environment.
-
-    -   **CON2**: I try to find ways to conserve natural resources in daily life.
-
-    -   **CON3**: Conservation can help create a greener planet for the future.
-
-    -   **CON4**: I feel social media platforms can be used to promote nature conservation.
-
-    -   **CON5**: I intend to save natural resources whenever possible.
+    -   **FAC7**: I like to mix with people who smile wholeheartedly.
 
 -   **END**
 
@@ -226,11 +178,11 @@ All the items accepted response in the form of a Likert Scale having 5 levels, w
 
 -   **Agree**(Score: 5)
 
-We also asked the same question in different manner to check the consistency of individual towards pro-environmental attitude.
+We also asked the same question in different manner to check the consistency of individual towards face recognition ability.
 
 ## Population
 
-The Data is collected from only the college and university students of India, who are in the age range of approximately 18 to 25. We have students participating from various colleges and universities and various majors or areas of study fill this Survey Questionnaire Form. We are hence, targeting to study the pro-environmental behavior of this population using our sample.
+The Data is collected from only the college and university students of India, who are in the age range of approximately 18 to 25. We have students participating from various colleges and universities and various majors or areas of study fill this Survey Questionnaire Form. We are hence, targeting to study the face recognition ability of this population using our sample.
 
 ## Collection
 
@@ -241,11 +193,11 @@ The data was collected from the `r nrow(data)` college students of India via goo
 Here we present the collected data from `r nrow(data)` college students.
 
 ```{r display_raw_data}
-kable(data, caption = "Collected Response of College Students of India on Pro-Environmental Attitude Questionnaire") %>%
+kable(data, caption = "Collected Response of College Students of India on Face Recognition Questionnaire") %>%
   kable_styling(position = "center") %>%
   scroll_box(width = "100%", height = "500px")
 ```
 
 Since, we are going to conduct statistical analysis with this data, we proceed with the above data after converting each column to their respected score i.e. numerical in nature and hence makes sense to carry forward with all sorts of statistical tools.
 
-The data collected for the study is available on the github repository for this project([here](https://github.com/RishiDarkDevil/Pro-Environmental-Attitude-Analysis/blob/main/PEAData.csv)).
+The data collected for the study is available on the github repository for this project([here](https://github.com/RishiDarkDevil/Face-Recognition-Psychology/blob/main/FaceRecData.csv)).
