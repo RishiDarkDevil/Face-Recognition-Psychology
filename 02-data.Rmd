@@ -52,12 +52,14 @@ data_opinion <- data_opinion %>%
   select(matches("^MEM."), matches("^ATTNPER."), matches("^SOC."), matches("^FAC."))
 
 # Converting personal info to factors
-data_personal <- data[,1:2] %>%
+data_personal <- data[,1] %>%
   map_df(~factor(.))
 
 # Encoded Data
-data_enc <- data %>%
+data_enc <- data[,2:ncol(data)] %>%
   map_df(~as.numeric(.))
+
+data_enc <- bind_cols(data_personal, data_enc)
 
 # Scaling the data properly
 data_enc_1 <- data_enc
