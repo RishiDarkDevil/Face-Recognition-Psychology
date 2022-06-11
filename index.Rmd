@@ -1,5 +1,5 @@
 ---
-title: "Facial Recognition Analysis among College Students of India"
+title: "Face Recognition Analysis among College Students of India"
 author: "Rishi Dey Chowdhury"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -11,7 +11,7 @@ Data collected from college students of India, composed mainly of students of In
 
 # Acknowledgement
 
-This study is a project as a part of Face Recognition Study, using statistical techniques, in my psychology course. It wouldn't have been possible without the constant support of my friends and resources to turn the idea I had in mind into a finished detailed report. I would also like to thank my psychology Prof. Debdulal Dutta Roy, for choosing such an important topic for this project which has great essence in today's world, where climate change and environmental pollution is at it's peak.
+This study is a project as a part of Face Recognition Study, using statistical techniques, in my psychology course. It wouldn't have been possible without the constant support of my friends and resources to turn the idea I had in mind into a finished detailed report. I would also like to thank my psychology Prof. Debdulal Dutta Roy, for choosing such an important topic for this project which has great essence in today's world, where face is a very important means of communication.
 
 Finally, I would also say that it was the outcome of constant efforts and dedication of proper time from my side that played the pivotal and most important role in completing this thorough detailed study.
 
