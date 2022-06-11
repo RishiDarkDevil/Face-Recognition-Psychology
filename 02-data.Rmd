@@ -30,7 +30,7 @@ library(kableExtra)
 options(dplyr.summarise.inform = FALSE)
 ```
 
-```{r raw_data, include=FALSE}
+```{r raw_data, include=FALSE, warning=FALSE, message=FALSE}
 # Importing Data
 data <- read_csv("FaceRecData.csv")
 ```
@@ -55,71 +55,52 @@ data_opinion <- data_opinion %>%
 data_personal <- data[,1:2] %>%
   map_df(~factor(.))
 
-# Putting all together
-data <- as_tibble(cbind(data_personal, data_opinion))
-
 # Encoded Data
 data_enc <- data %>%
   map_df(~as.numeric(.))
 
 # Scaling the data properly
 data_enc_1 <- data_enc
-for (i in 1:7) {
-  data_enc_1[[i+2]] <- data_enc_1[[i+2]]/7
+for (i in 1:6) {
+  data_enc_1[[i+1]] <- data_enc_1[[i+1]]/6
+  data_enc_1[[12+i]] <- data_enc_1[[12+i]]/6
 }
-for (i in 10:15) {
-  data_enc_1[[i]] <- data_enc_1[[i]]/6
-}
-data_enc_1[,16:ncol(data_enc_1)] <- data_enc_1[,16:ncol(data_enc_1)]/5
+data_enc_1[,8:12] <- data_enc_1[,8:12]/5
+data_enc_1[,19:ncol(data_enc)] <- data_enc_1[,19:ncol(data_enc)]/7
 
 # Net Score Data for each category
 data_net_score <- data_enc %>%
   transmute(
     Sex = Sex,
-    Family = Family,
-    REC = (REC1+REC2+REC3+REC4+REC5+REC6+REC7)*100/35,
-    SA = (SA1+SA2+SA3+SA4+SA5+SA6)*100/30,
-    PC = (PC1+PC2+PC3+PC4+PC5+PC6)*100/30,
-    SS = (SS1+SS2+SS3+SS4+SS5)*100/25,
-    ER = (ER1+ER2+ER3+ER4+ER5)*100/25,
-    ES = (ES1+ES2+ES3+ES4+ES5)*100/25,
-    RES = (RES1+RES2+RES3+RES4+RES5)*100/25,
-    CON = (CON1+CON2+CON3+CON4+CON5)*100/25
+    MEM = (MEM1+MEM2+MEM3+MEM4+MEM5+MEM6)*100/30,
+    ATTNPER = (ATTNPER1+ATTNPER2+ATTNPER3+ATTNPER4+ATTNPER5)*100/25,
+    SOC = (SOC1+SOC2+SOC3+SOC4+SOC5+SOC6)*100/30,
+    FAC = (FAC1+FAC2+FAC2+FAC3+FAC4+FAC5+FAC6+FAC7)*100/35
   )
 
 # Total Score
 data_tot_score <- data_enc %>%
-  mutate(Score = (REC1+REC2+REC3+REC4+REC5+REC6+REC7+SA1+SA2+SA3+SA4+SA5+SA6+PC1+PC2+PC3+PC4+PC5+PC6+SS1+SS2+SS3+SS4+SS5+ER1+ER2+ER3+ER4+ER5+ES1+ES2+ES3+ES4+ES5+RES1+RES2+RES3+RES4+RES5+CON1+CON2+CON3+CON4+CON5)*100/220) %>%
-  select(Sex, Family, Score)
+  mutate(Score = (MEM1+MEM2+MEM3+MEM4+MEM5+MEM6+ATTNPER1+ATTNPER2+ATTNPER3+ATTNPER4+ATTNPER5+SOC1+SOC2+SOC3+SOC4+SOC5+SOC6+FAC1+FAC2+FAC2+FAC3+FAC4+FAC5+FAC6+FAC7)*100/120) %>%
+  select(Sex, Score)
 ```
 
 Here we shall explore the data we have collected from the `r nrow(data_enc)` college students of India as a response to a survey form given to them. First we shall look at the survey form, then look at the actual data we have collected and as the last part of this section we shall see the different variables and domains involved in this study.
 
 ## Survey Form
 
-To conduct the pro-environmental attitude study, we circulated a survey form among college students of India through Google Forms. The Survey form comprised of 8 sections, each section pertaining to a particular domain of pro-environmental attitude. Each section comprised of 5-6 questions framed to test the attitude towards that particular aspect of pro-environmental attitude among students of India. Let's look at the sections and the questions asked in the form itself.
+To conduct the face recognition study, we circulated a survey form among college students of India through Google Forms. The Survey form comprised of 4 sections, each section pertaining to a particular domain of face recognition ability. Each section comprised of 5-7 questions framed to test the response towards that particular aspect of face recognition ability among students of India. Let's look at the sections and the questions asked in the form itself.
 
 ### Domains
 
-**These can also be referred to as the study variables** and we have collected data on the following 8 domains of pro-environmental attitude. These domains comprise of the overall pro-environmental attitude of an individual. The domains are as follow:
+**These can also be referred to as the study variables** and we have collected data on the following 4 domains of face recognition ability. These domains comprise of the overall face recognition ability of an individual. The domains are as follow:
 
--   **Recycling(abbv. as REC)**: Recycling is the process of converting waste materials into new materials and objects. The recovery of energy of waste material is often included in this concept. The recyclability of a material depends on its ability to reacquire the properties it had in its original state. It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emission. It can also prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, reducing energy use, air pollution (from incineration) and water pollution (from landfiling).
+-   **Memory(abbv. as MEM)**: It deals with the aspect of how humans remember familiar and unfamiliar faces. It also keeps a record of whether we can track the information about the identity of a person. We also see how well we remember our past friends and people we have met.
 
-    Recycling is a key component of modern waste reduction and is the third component of the "Reduce, Reuse, and Recycle" waste hierarchy. It promotes environmental sustainability by removing raw material input and redirecting waste output in the economic system.
+-   **Attention & Perception(ATTNPER)**: It deals with how attentive we are to various parts of the face. How human faces are perceived by the society. It also deals with how human brain treat face as an important aspect of information processing.
 
--   **Environmental Safety(SA)**: Environmental safety is defined by the guidance, policies, and practices enforced in order to ensure that the surrounding environment is free from hazards that will warrant the safety and well-being of workers and employees, residents near industrial operations, as well as the prevention of accidental environmental damage. The surrounding areas include industrial facilities, work areas, and laboratories. Environmental safety is a crucial issue for any industrial activity as negligence and non-compliance heighten the risk resulting in injuries, illnesses, and accidental environmental releases.
+-   **Social Understanding(SOC)**: It deals with how human face plays an important role in communication and interacting with the society. It also deals with how humans tend to prefer some pre-set standards of beauty in terms of facial look.
 
--   **Perceived Control(PC)**: An individual's perceived control is the degree to which they believe that they have control over themselves and the place, people, things, feelings and activities surrounding them.
-
--   **Social Support(SS)**: Social support is the perception and actuality of someone being supported by the society, i.e. friends, family and other people, to attain or fulfill certain goals. Here it refers to the support of the society as a whole to protect the environment.
-
--   **Environmental Reductionism(ER)**: Environmental Reductionism is a set of processes and practices intended to reduce the amount of waste produced. By reducing or eliminating the generation of harmful and persistent wastes, environmental reductionism supports efforts to promote a more sustainable society. It involves redesigning products and processes and/or changing societal patterns of consmption and production.
-
--   **Environmental Sensitivity(ES)**: Environmental Sensitivity describes the ability of an individual to perceive and process information about their environment. It is a basic trait found in many organisms that enables an individual to adapt to different environmental conditions. Levels of Environmental Sensitivity often vary considerably from individual to individual, with some being more and others less sensitive to the same conditions.
-
--   **Reuse(RES)**: **Reuse** is the action or practice of using an item, whether for its original purpose (conventional reuse) or to fulfill a different function (creative reuse or repurposing). It should be distinguished from recycling, which is the breaking down of used items to make raw materials for the manufacture of new products. Reuse -- by taking, but not reprocessing, previously used items -- helps save time, money, energy and resources. In broader economic terms, it can make quality products available to people and organizations with limited means, while protecting environmental load.
-
--   **Conservation(CON)**: Conservation is the act of protecting over-exploitation of natural resources which may lead to environmental load of sustaining the further human generations. It may refer to the act of saving the natural resources as much as possible.
+-   **Facial Features(FAC)**: It deals with what preferences in terms of external facial features prevails in the society. It also deals with the aspect of how a person looks at external beauty like shape, size, eyes, facial hair, smile, etc of a person's face.
 
 ### Questions
 
