@@ -851,9 +851,9 @@ data_enc_trans <- as_tibble(t(data_enc[,2:ncol(data_enc)])) %>%
   select(Qsn, everything())
 
 # Pairwise correlation between samples (columns)
-cols.cor <- cor(data_enc[,3:ncol(data_enc)], use = "pairwise.complete.obs", method = "pearson")
+cols.cor <- cor(data_enc[,2:ncol(data_enc)], use = "pairwise.complete.obs", method = "pearson")
 # Pairwise correlation between rows (Qsns)
-rows.cor <- cor(data_enc_trans[,2:ncol(data_enc_trans)], use = "pairwise.complete.obs", method = "pearson")
+rows.cor <- cor(data_enc_trans[,c(2:9, 12:20,22:ncol(data_enc_trans))], use = "pairwise.complete.obs", method = "pearson")
 
 ## Row- and column-wise clustering using correlation 
 hclust.col <- hclust(as.dist(1-cols.cor)) 
